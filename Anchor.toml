@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+solana_anchor_pda = "GjY9K7So8pnfVjQJsf24fwjCcRYasz3F3hC8V8DEMswg"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/abdullah/solana/solana-anchor-pda/my-solana-wallet/wallet.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
